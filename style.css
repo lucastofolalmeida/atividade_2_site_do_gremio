@@ -43,7 +43,6 @@ body {
     text-align: center;
     border-bottom: 4px solid #ffd700;
     font-size: 1.5rem;
-    z-index: 10;
 }
 
 .noticias {
@@ -55,7 +54,6 @@ body {
     margin: 40px auto;
     max-width: 1200px;
     border-radius: 40px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .noticia {
@@ -66,8 +64,6 @@ body {
     padding: 15px;
     margin: 15px;
     width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
 }
 
 .noticia:hover {
@@ -101,9 +97,6 @@ body {
     border-radius: 50px;
     border: 3px solid #da291c;
     font-weight: bold;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    z-index: 100;
-    font-size: 1.2rem;
 }
 
 footer {
@@ -117,21 +110,90 @@ footer h3 {
     margin-top: 0;
 }
 
-.elenco {
-    list-style: none;
-    padding: 0;
-    display: flex;
+.elenco{
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px 25px;
-    max-width: 800px;
-    margin: 20px auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
 }
 
-.elenco li {
-    background-color: #da291c;
-    padding: 8px 16px;
-    border-radius: 30px;
-    border: 2px solid white;
-    font-weight: bold;
+.elenco h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+
+.jogadores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.card h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.trofeus{
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.trofeus h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.lista-trofeus{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trofeu-card{
+    background: rgb(242, 242, 242);
+    padding: 50px;
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.trofeu-card img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.trofeu-card h3{
+    margin: 10px 0;
+    padding-bottom: 10px 0;
+    color: black;
+}
+.trofeu-card p{
+    color: gray;
+}
+
+.trofeu-card:hover{
+    transform: scale(1.08);
 }
